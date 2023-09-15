@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
-import Movie from './pages/Movies';
+import Category from './pages/Category';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contacts' element={<Contact/>}/>
-        <Route path='/movies/:id' element={<Movie/>}/>
+        <Route path='/category/:name' element={<Category/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
       </main>

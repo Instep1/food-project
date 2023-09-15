@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './categoriesItem.scss';
 
 const CategoriesItem = ({idCategory, strCategory, strCategoryThumb, strCategoryDescription}) => {
     return (
@@ -12,7 +13,7 @@ const CategoriesItem = ({idCategory, strCategory, strCategoryThumb, strCategoryD
           <p>{strCategoryDescription.slice(0, 60)}...</p>
         </div>
         <div className="card-action">
-            <Link to={`/category/${idCategory}`} className='btn'>Watch category</Link>
+            <Link to={`/category/${strCategory}`} className='btn'>Watch category</Link>
         </div>
       </div>
     );
