@@ -12,7 +12,7 @@ const Meal = ({strMeal, idMeal, strMealThumb}) => {
         <span className="card-title">{strMeal}</span>
         </div>
         <div className="card-action">
-            <Link to={`/meal/${idMeal}`} className='btn'>Watch recipe</Link>
+            <Link to={`/recipe/${idMeal}`} className='btn'>Watch recipe</Link>
         </div>
       </div>
     );
